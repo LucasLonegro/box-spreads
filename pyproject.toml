@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stress-signal"
+version = "0.1.0"
+description = "Does the Treasury convenience yield forecast S&P 500 realized volatility beyond VIX and HAR?"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "scipy>=1.11",
+    "statsmodels>=0.14",
+    "requests>=2.31",
+    "openpyxl>=3.1",
+    "pyarrow>=14",
+    "jupyter",
+    "nbconvert",
+    "ipykernel",
+    "pytest>=8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

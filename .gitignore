@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data: third-party (Diamond box rates, WRDS/OptionMetrics) or regenerable; never published
+/data/
+/results/
+
+# Local WRDS exports
+*Wharton Research Data Services*.csv
